@@ -1,1 +1,40 @@
-body{background: #91abff;}
+body{background: #fff;}
+h1{text-align: center; color: #333;}
+p{text-align: center;}
+
+#section1{width: 100%; height: 900px; text-align: center; position: relative; z-index: 10;}
+#section1 .main{width: 100%; padding-top: 70px;}
+#section1 .main .main_bg{width: 100%; height: 100%; position: absolute; left: 0; right: 0; top: 100px; z-index: -1;}
+#section1 .main .main_tit{font-size: 40px; font-weight: normal; color: #666; text-align: center;}
+#section1 .main .main_tit span{font-size: 45px; font-weight: bold; color: #333;}
+#section1 .main .main_tit .logo img{transform: rotate(20deg);}
+#section1 .main .main_img{position: absolute; top: 20px; left: 50%; transform: translate(-50%);}
+
+/* bg */
+#section1 .main .main_bg .st0{stroke-dasharray: 2379; /* stroke-dashoffset: -300; */ animation: draw 2s ease-in-out .0s infinite;}
+#section1 .main .main_bg .st1{stroke-dasharray: 2532; /* stroke-dashoffset: -300; */ animation: draw1 .7s ease-in-out .1s infinite;}
+#section1 .main .main_bg .st2{stroke-dasharray: 2717; /* stroke-dashoffset: -300; */ animation: draw2 1s ease-in-out .3s infinite;}
+
+@keyframes draw {
+    from{stroke-dashoffset: -2379px;}
+    to{stroke-dashoffset: 0;}
+}
+@keyframes draw1 {
+    from{stroke-dashoffset: 2532;}
+    to{stroke-dashoffset: 0;}
+}
+@keyframes draw2 {
+    from{stroke-dashoffset: -2717;}
+    to{stroke-dashoffset: 0;}
+}
+
+#section1 .main .main_bg .shape .bg1{position: absolute; top: 50px; left: 400px; animation: shape 5s infinite;}
+#section1 .main .main_bg .shape .bg2{position: absolute; top: -30px; right: 400px; animation: shape 2s infinite;}
+#section1 .main .main_bg .shape .bg3{position: absolute; top: 410px; left: 250px; animation: shape 1s infinite;}
+#section1 .main .main_bg .shape .bg4{position: absolute; top: 280px; right: 50px; animation: shape 2s infinite;}
+#section1 .main .main_bg .shape .bg5{position: absolute; top: 540px; right: 400px; animation: shape 3s infinite;}
+@keyframes shape{
+    0%{transform:translate(0,0)}
+	50%{transform:translate(0,-5%)}
+    100%{transform:translate(0,0)}
+}
